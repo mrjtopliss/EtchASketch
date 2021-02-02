@@ -1,0 +1,119 @@
+:root {
+  --grid-size: 16;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 20px;
+  font-family: cursive;
+  background-color: rgb(163, 193, 211);
+}
+
+#containers {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: lavender;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  height: 45vw;
+  width: 45vw;
+  justify-self: right;
+  background-color: aliceblue;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#controls-container {
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item {
+  border: 1px solid rgb(lavender);
+}
+
+#clear-controls,
+#size-controls,
+#color-controls {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#controls-heading {
+  color: rgb(39, 94, 139);
+  font-family: cursive;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+#size-value,
+#color-value {
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+}
+
+#erase-note {
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+  font-size: 11px;
+}
+
+#pen-option-form {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 14px;
+}
+
+#color-picker {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+}
+
+#color-picker-option {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#color {
+  margin-top: 5px;
+  border-color: rgb(39, 94, 139);
+  border-style: double;
+  border-width: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#color:hover {
+  box-shadow: 3px 3px 3px 3px rgb(112, 154, 218);
+}
+
+button {
+  color: rgb(39, 94, 139);
+  font-family: cursive;
+  font-size: 16px;
+  border-color: rgb(39, 94, 139);
+  border-radius: 5px;
+  border-style: double;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px 3px rgb(112, 154, 218);
+}
